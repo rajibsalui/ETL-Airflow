@@ -12,6 +12,7 @@ A comprehensive Apache Airflow ETL pipeline project built with Astronomer CLI, f
 - [Configuration](#configuration)
 - [Running the Project](#running-the-project)
 - [DAGs Description](#dags-description)
+- [Screenshots](#screenshots)
 - [Database Schema](#database-schema)
 - [Commands Reference](#commands-reference)
 - [Troubleshooting](#troubleshooting)
@@ -20,6 +21,9 @@ A comprehensive Apache Airflow ETL pipeline project built with Astronomer CLI, f
 ## 🌟 Overview
 
 This project demonstrates a complete ETL (Extract, Transform, Load) pipeline using Apache Airflow. The main pipeline extracts weather data from the Open-Meteo API for London, transforms the data into a structured format, and loads it into a PostgreSQL database.
+
+![Airflow Dashboard](Screenshot%202025-09-15%20225903.png)
+*Airflow UI showing the ETL weather pipeline in action*
 
 ## 📁 Project Structure
 
@@ -158,6 +162,9 @@ Once started, access the Airflow web interface at:
 - **Username**: admin
 - **Password**: admin
 
+![Airflow UI Dashboard](Screenshot%202025-09-15%20225903.png)
+*Example of the Airflow UI showing DAGs and their execution status*
+
 ### Enable and Trigger DAGs
 
 1. Navigate to the Airflow UI
@@ -188,7 +195,20 @@ Once started, access the Airflow web interface at:
 
 **Purpose**: Demonstrates dynamic task mapping with astronaut data from Open Notify API
 
-## 🗄️ Database Schema
+## � Screenshots
+
+### Airflow Dashboard Overview
+![Airflow Dashboard](Screenshot%202025-09-15%20225903.png)
+*The main Airflow dashboard showing the ETL weather pipeline and other DAGs with their execution status, schedules, and recent runs.*
+
+### Key UI Features Shown:
+- **DAG List**: Overview of all available DAGs in the project
+- **Execution Status**: Real-time status of DAG runs (success, running, failed)
+- **Schedule Information**: Shows daily scheduling for the weather ETL pipeline
+- **Recent Runs**: Historical execution data and performance metrics
+- **Actions**: Quick access to trigger, pause, or configure DAGs
+
+## �🗄️ Database Schema
 
 The weather data is stored in the `weather_data` table:
 
